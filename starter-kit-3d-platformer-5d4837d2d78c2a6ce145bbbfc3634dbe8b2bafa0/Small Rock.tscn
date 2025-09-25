@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=4 uid="uid://c8p35nqn08810"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgpny"]
+resource_name = "Material"
+albedo_color = Color(0.419993, 0.419993, 0.419993, 1)
+roughness = 0.991
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l8cgk"]
+_surfaces = [{
+"aabb": AABB(-0.278656, -0.007276, -0.26502, 0.558894, 0.374935, 0.619913),
+"format": 34896613377,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAgAEAAMAAQAEAAIAAAADAAUABgABAAAAAAAFAAYAAQAGAAcAAwAIAAUABAAIAAMABgAFAAkABgAJAAcABQAIAAkABwAKAAEAAQAKAAQABwAJAAoACgAIAAQACQAIAAoA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("MVgAAAAAAADl5gAAFLEAAOXmAADNKQAA06HBpFoUAAD//4SVlWcAAFQ6i6MpLgAAAAAAAHBtAAAgdwAA//8AAHB+//+2cQAAaRmbmfbAAAATp0O+iPkAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uvrv0"]
+resource_name = "Small Rock_Small_Rock_Icosphere-Mesh"
+_surfaces = [{
+"aabb": AABB(-0.278656, -0.007276, -0.26502, 0.558894, 0.374935, 0.619913),
+"attribute_data": PackedByteArray("6KKv19FFr9dcdK/Xc9Gv1///r9fRRa/XFl1gr1x0r9dFF6/Xiy5gr9FFr9dz0a/Xuehgr///r9fooq/XLbpgr3PRr9dcdK/Xootgr+iir9fRRa/Xiy5grxZdYK9FF6/XAABgr4suYK9z0a/XLbpgr7noYK/ooq/Xootgry26YK9cdK/XFl1gr6KLYK+LLmCv0UURhxZdYK8AAGCvRRcRh4suYK8tumCvc9ERh7noYK+ii2Cv6KIRhy26YK8WXWCvXHQRh6KLYK8="),
+"format": 34896613399,
+"index_count": 54,
+"index_data": PackedByteArray("AAABAAIAAwABAAAAAQADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwAkACUAJgAnACgAKQAqACsALAAtAC4ALwAwADEA"),
+"material": SubResource("StandardMaterial3D_vgpny"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 50,
+"vertex_data": PackedByteArray("MVgAAAAA/7/l5gAAFLH/v+XmAADNKf+/AAAAAHBt/78gdwAA////v+XmAAAUsZvA//+ElZVnm8Dl5gAAzSmbwCB3AAD//w+cE6dDvoj5D5zl5gAAFLEPnAAAAABwbT+oaRmbmfbAP6ggdwAA//8/qDFYAAAAAJzZVDqLoykunNkAAAAAcG2c2eXmAADNKTLz06HBpFoUMvMxWAAAAAAy8+XmAAAUsb+sE6dDvoj5v6z//4SVlWe/rCB3AAD//6iUaRmbmfbAqJQTp0O+iPmolAAAAABwbQ/JVDqLoykuD8lpGZuZ9sAPyTFYAAAAAB/106HBpFoUH/VUOoujKS4f9eXmAADNKVHg//+ElZVnUeDTocGkWhRR4BOnQ76I+Wa+cH7//7ZxZr7//4SVlWdmvmkZm5n2wOyxcH7//7Zx7LETp0O+iPnssVQ6i6MpLvDNcH7//7Zx8M1pGZuZ9sDwzdOhwaRaFCL2cH7//7ZxIvZUOoujKS4i9v//hJWVZ+nicH7//7Zx6eLTocGkWhTp4gAA/38AAP9/AAD/fwAA/38AAP9/V3NPGVdzTxlXc08ZsWYIIrFmCCKxZggialZm5GpWZuRqVmbksYH6+rGB+vqxgfr64X/aAOF/2gDhf9oArJR+GayUfhmslH4Zn7lW2J+5VtifuVbYRo2a3kaNmt5GjZreOYJe6jmCXuo5gl7q0JNFAtCTRQLQk0UCRMt5NETLeTREy3k08NXkovDV5KLw1eSixpnow8aZ6MPGmejDcYUn0HGFJ9BxhSfQn7Z3DZ+2dw2ftncN")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_l8cgk")
+
+[node name="Small Rock" type="Node3D"]
+
+[node name="Small_Rock_Icosphere" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_uvrv0")
+skeleton = NodePath("")
